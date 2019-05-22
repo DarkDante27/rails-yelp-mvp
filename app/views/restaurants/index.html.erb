@@ -1,0 +1,16 @@
+<div class="container d-flex justify-content-center">
+  <div class="row">
+    <div class="col_4">
+<h1 >All restaurants</h1>
+<% @restaurants.each do |restaurant| %>
+        <div class="bd-highlight mb-3">
+          <h2 class="p-2 bd-highlight"><%= restaurant.name %></h2>
+          <p class="p-2 bd-highlight"><%= restaurant.category %></p>
+          <p class="p-2 bd-highlight"><%= restaurant.address %></p>
+          <p class="p-2 bd-highlight"><%= restaurant.phone_number %></p>
+<% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
